@@ -3,6 +3,8 @@
 
 error() { echo "error" && exit 1; }
 
+sudo apt-get install ansible -y || error 
+
 #trial and error code for missing packages.... 
 sudo apt-get update
 sudo apt-get install fakeroot xorriso ocl-icd-opencl-dev libglu1-mesa libssl3 qtwayland5 -y || error
